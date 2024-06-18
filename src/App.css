@@ -1,38 +1,479 @@
-.App {
+.Screen {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+.Marquee-Style{
+  height: 100vh;
+  margin-left: calc(-14.20vw);
+}
+
+.VerticalDivider {
+  position: absolute;
+  margin-left: 31vw; /* 20% of viewport width minus 1px (for the border) */
+  width: 2px;
+  height: 100vh;
+  background-color: #c2c2c2;
+  border-radius: 2px;
+}
+
+.image_wrapper {
+  margin: 0px 10px;
+  width: 21vw;
+  height: 21vw;
+  border-radius: 1vw;
+}
+
+.Box_0{
+  background-color: transparent;
+  height: 100vh;
+  width: 3vw;
+  display: flex;
+}
+
+.Box_1{
+  background-color: transparent;
+  height: 100vh;
+  width: 29vw;
+  display: flex;
+  align-items: center;
+}
+
+.Box_1_inner{
+  display:flex; 
+  height: 100%
+}
+
+.Box_2{
+  background-color: transparent;
+  height: 100vh;
+  width: 68vw;
+  display: flex;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Box_2_boxes{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50vw;
+  height: 10w;
+  margin-top: 2vw;
+  margin-bottom: 2vh;
+  background-color: transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Box_2_box_card{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 16vw;
+  height: 12vw;
+  background-color: #2e2d2d;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  border-radius: 1vw;
+}
+
+.Box_2_box_card_text{
+  color: #ffffff;
+  font-size: 2vh;
+  font-family: Rubik;
+  font-weight: 400;
+  line-height: 33px;
+  text-align: center;
+  text-transform: lowercase;
+  width: 15vw;
+}
+
+.Symbol_Text{
+  font-size: 3vw;
+}
+
+
+
+.Heading {
   color: white;
+  font-size: 2.5vw;
+  font-weight: 300;
+  font-family: playfair display;
+  margin-top: calc(-1h);
 }
 
-.App-link {
-  color: #61dafb;
+.message_1{
+  color: #ffffff;
+  font-size: 2.25vw;
+  font-family: 'Playfair Display';
+  text-align: center;
+  text-transform: lowercase;
+  margin-bottom: 2vh;
+  width: 50vw;
+  background-color: transparent;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.logo_wrapper {
+  margin-top: 5vh;
+  margin-bottom: 3vh;
+  width: 7vw;
+  height: 7vw;
+  border-radius: 1vh;
+}
+
+.Box_2_inner_3{
+  display: flex;
+  flex-direction: row;
+  width: 52vw;
+  height: 10vw;
+  background-color: transparent;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.Input_1 {
+  width: 13vw;
+  height: 3vw;
+  padding: 0px 15px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 100000px;
+  box-shadow: 0px 0px 10px rgba(3, 3, 3, 0.1);
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 1vw;
+  font-family: 'Roboto';
+}
+
+.Input_2 {
+  width: 25vw;
+  height: 3vw;
+  padding: 0px 15px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 100000px;
+  box-shadow: 0px 0px 10px rgba(3, 3, 3, 0.1);
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 1vw;
+  font-family: 'Roboto';
+}
+
+.submit_button {
+  cursor: pointer;
+  width: 11vw;
+  height: 3vw;
+  padding: 0px 8px;
+  border: 1px solid hsl(62, 99%, 49%);
+  box-sizing: border-box;
+  border-radius: 250px;
+  box-shadow: 0px 0px 10px rgba(3, 3, 3, 0.1);
+  background-color: #f8ee04;
+  color: #000000;
+  font-size: 1vw;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 21px;
+  outline: none;
+}
+
+/* add media queries here */
+
+@media (max-width: 768px){
+  .Screen {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    flex-direction: row;
+    overflow: scroll;
   }
-  to {
-    transform: rotate(360deg);
+
+  .VerticalDivider {
+    display: none;
+  }
+
+  .Box_0{
+    display: none;
+  }
+
+  .Box_1{
+    display: none;
+  }
+
+  .Box_2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: calc(100vw);
+    height: calc(120vh);
+  }
+
+  .Box_2_boxes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30vh;
+    height: 90vh;
+    background-color: transparent;
+    margin-top: 2vw;
+    margin-bottom: 2vh;
+    align-items: center;
+      }
+
+  .Box_2_box_card{
+    display: flex;
+    flex-direction: column;
+    width: 22vh;
+    height: 18vh;
+    background-color: #2e2d2d;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2vw;
+  }
+
+  .Box_2_box_card_text{
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-family: Rubik;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-align: center;
+    text-transform: lowercase;
+    width: 20vh;
+  }
+
+  .Symbol_Text{
+    font-size: 10.5vw;
+  }
+
+  .Heading {
+    color: white;
+    font-size: 2.5vw;
+    font-weight: 300;
+    font-family: playfair display;
+  }
+
+  .message_1{
+    color: #ffffff;
+    font-size: 2rem;
+    font-family: 'Playfair Display';
+    text-align: center;
+    text-transform: lowercase;
+    margin-bottom: 2vh;
+    width:60vw;
+    
+  }
+
+  .logo_wrapper {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 1vh;
+  }
+
+  .Box_2_inner_3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80vw;
+    height: 30vh;
+    margin-bottom: 2vh;
+}
+.Input_1{
+  width: 75vw;
+  height: 10vw;
+  padding: 0px 15px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 100000px;
+  box-shadow: 0px 0px 10px rgba(3, 3, 3, 0.1);
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 4vw;
+  font-family: 'Roboto';
+}
+.Input_2{
+  width: 75vw;
+  height: 10vw;
+  padding: 0px 15px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 100000px;
+  box-shadow: 0px 0px 10px rgba(3, 3, 3, 0.1);
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 4vw;
+  font-family: 'Roboto';
+}
+
+.submit_button{
+  cursor: pointer;
+  width: 75vw;
+  height: 10vw;
+  padding: 0px 8px;
+  border: 1px solid hsl(62, 99%, 49%);
+  box-sizing: border-box;
+  border-radius: 250px;
+  box-shadow: 0px 0px 10px rgba(3, 3, 3, 0.1);
+  background-color: #f8ee04;
+  color: #000000;
+  font-size: 4vw;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 21px;
+  outline: none;
+}
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  /* Your CSS rules for this range */
+  .Screen {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    flex-direction: row;
+    overflow: scroll;
+  }
+  .VerticalDivider {
+    display: none;
+  }
+
+  .Box_0{
+    display: none;
+  }
+
+  .Box_1{
+    display: none;
+  }
+
+  .Box_2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: calc(100vw);
+    height: calc(140vh);
+  }
+
+  .Box_2_boxes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30vh;
+    height: 100vh;
+    
+    margin-top: 2vw;
+    margin-bottom: 2vh;
+    align-items: center;
+    }
+
+  .Box_2_box_card{
+    display: flex;
+    flex-direction: column;
+    width: 33vw;
+    height: 22vh;
+    background-color: #2e2d2d;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2vw;
+  }
+
+  .Box_2_box_card_text{
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-family: Rubik;
+    font-weight: 400;
+    line-height: 2rem;
+    text-align: center;
+    text-transform: lowercase;
+    width: 20vh;
+  }
+
+  .Symbol_Text{
+    font-size: 4rem;
+  }
+
+  .Heading {
+    color: white;
+    font-size: 2.5vw;
+    font-weight: 300;
+    font-family: playfair display;
+  }
+
+  .message_1{
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-family: 'Playfair Display';
+    text-align: center;
+    text-transform: lowercase;
+    margin-bottom: 2vh;
+    width:40vw;
+    
+  }
+
+  .logo_wrapper {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 1vh;
+  }
+
+  .Box_2_inner_3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80vw;
+    height: 30vh;
+    margin-bottom: 2vh;
+}
+  .Input_1{
+    width: 75vw;
+    height: 7vw;
+    padding: 0px 15px;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 100000px;
+    box-shadow: 0px 0px 10px rgba(3, 3, 3, 0.1);
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 4vw;
+    font-family: 'Roboto';
+  }
+  .Input_2{
+    width: 75vw;
+    height: 7vw;
+    padding: 0px 15px;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 100000px;
+    box-shadow: 0px 0px 10px rgba(3, 3, 3, 0.1);
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 4vw;
+    font-family: 'Roboto';
+  }
+
+  .submit_button{
+    cursor: pointer;
+    width: 75vw;
+    height: 7vw;
+    padding: 0px 8px;
+    border: 1px solid hsl(62, 99%, 49%);
+    box-sizing: border-box;
+    border-radius: 250px;
+    box-shadow: 0px 0px 10px rgba(3, 3, 3, 0.1);
+    background-color: #f8ee04;
+    color: #000000;
+    font-size: 4vw;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 21px;
+    outline: none;
   }
 }
