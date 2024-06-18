@@ -7,7 +7,7 @@
 
 .Marquee-Style{
   height: 100vh;
-  margin-left: calc(-14.20vw);
+  /* margin-left: calc(-14.20vw); */
 }
 
 .VerticalDivider {
@@ -39,6 +39,7 @@
   width: 29vw;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .Box_1_inner{
