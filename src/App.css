@@ -212,7 +212,7 @@
     align-items: center;
     flex-direction: column;
     width: calc(100vw);
-    height: calc(120vh);
+    height: auto;
   }
 
   .Box_2_boxes{
