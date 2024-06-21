@@ -213,7 +213,6 @@
     flex-direction: column;
     width: calc(100vw);
     height: auto;
-    margin-top: 2vh;
   }
 
   .Box_2_boxes{
@@ -284,7 +283,7 @@
     justify-content: space-between;
     width: 80vw;
     height: 20vh;
-    margin-bottom: 10vh;
+    margin-bottom: 20vh;
 }
 .Input_1{
   width: 75vw;
