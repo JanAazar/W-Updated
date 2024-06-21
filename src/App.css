@@ -231,8 +231,8 @@
   .Box_2_box_card{
     display: flex;
     flex-direction: column;
-    width: 22vh;
-    height: 18vh;
+    width: 25vh;
+    height: 20vh;
     background-color: #2e2d2d;
     justify-content: center;
     align-items: center;
@@ -284,7 +284,7 @@
     justify-content: space-between;
     width: 80vw;
     height: 20vh;
-    margin-bottom: 2vh;
+    margin-bottom: 5vh;
 }
 .Input_1{
   width: 75vw;
