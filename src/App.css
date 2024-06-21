@@ -198,9 +198,7 @@
   }
 
   .Box_0{
-    width:100vw;
-    display: flex;
-    height:5vh;
+    display: none;
   }
 
   .Box_1{
@@ -215,7 +213,7 @@
     flex-direction: column;
     width: calc(100vw);
     height: auto;
-    margin-top: 30vh;
+    margin-top: 10vh;
   }
 
   .Box_2_boxes{
