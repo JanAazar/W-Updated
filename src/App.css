@@ -200,7 +200,7 @@
   .Box_0{
     width:100vw;
     display: flex;
-    height:10vh;
+    height:5vh;
   }
 
   .Box_1{
@@ -223,7 +223,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 30vh;
-    height: 50vh;
+    height: 60vh;
     background-color: transparent;
     margin-top: 2vw;
     margin-bottom: 2vh;
