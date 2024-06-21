@@ -213,7 +213,7 @@
     flex-direction: column;
     width: calc(100vw);
     height: auto;
-    margin-top: 10vh;
+    margin-top: 5vh;
   }
 
   .Box_2_boxes{
@@ -221,7 +221,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 30vh;
-    height: 75vh;
+    height: 72vh;
     background-color: transparent;
     margin-top: 2vw;
     margin-bottom: 2vh;
@@ -232,7 +232,7 @@
     display: flex;
     flex-direction: column;
     width: 25vh;
-    height: 20vh;
+    height: 23vh;
     background-color: #2e2d2d;
     justify-content: center;
     align-items: center;
