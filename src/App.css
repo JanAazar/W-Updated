@@ -132,7 +132,6 @@
   background-color: transparent;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .Input_1 {
@@ -250,8 +249,8 @@
   }
 
   .Symbol{
-    width: 9vw;
-    height: 9vw;
+    width: 12vw;
+    height: 12vw;
     margin-bottom: 2vh;
   }
 
@@ -285,6 +284,7 @@
     justify-content: space-between;
     width: 80vw;
     height: 20vh;
+    margin-top: 5vh;
     margin-bottom: 20vh;
 }
 .Input_1{
@@ -429,6 +429,7 @@
     width: 80vw;
     height: 25vw;
     margin-bottom: 20vh;
+    margin-top: 5vh;
 }
 .Input_1{
   width: 50vw;
@@ -579,6 +580,7 @@
     width: 80vw;
     height: 30vh;
     margin-bottom: 2vh;
+    margin-top: 5vh;
 }
   .Input_1{
     width: 75vw;
