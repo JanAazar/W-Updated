@@ -11,6 +11,9 @@ import image_h from './assets/H.jpg';
 import image_i from './assets/I.jpg';
 import image_k from './assets/K.jpg';
 import logo from './assets/logo.jpeg';
+import star from './assets/star.png';
+import ghost from './assets/ghost.png';
+import camera from './assets/camera.png';
 
 
 
@@ -72,24 +75,26 @@ function App() {
 
     <div class="Box_2_boxes">
     <div class="Box_2_box_card">
-    <div class="Box_2_box_card_text">
-      <span class="Symbol_Text">📸</span> <br/> 
+      <img src={camera} className='Symbol' alt='image_1'/>
+    <div class="Box_2_box_card_text"> 
       <span style={{fontWeight:500}}>live request: </span>
       <br />
       request the gc to send a live-picture in 2 minutes
     </div>
     </div>
     <div class="Box_2_box_card">
+      <img src={ghost} className='Symbol' alt='image_1'/>
     <div class="Box_2_box_card_text">
-      <span class="Symbol_Text">👻</span> <br/> 
+      
       <span style={{fontWeight:500}}>no ghosting: </span>
       <br />
       share what you're doing to see they are doing
     </div>
     </div>
     <div class="Box_2_box_card">
+      <img src={star} className='Symbol' alt='image_1'/>
     <div class="Box_2_box_card_text">
-      <span class="Symbol_Text">⭐️</span><br/> 
+      
       <span style={{fontWeight:500}}>gc moments: </span>
       <br />
       star texts and live- pictures shared in the gc

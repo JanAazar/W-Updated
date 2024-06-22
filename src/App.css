@@ -91,11 +91,11 @@
   width: 15vw;
 }
 
-.Symbol_Text{
-  font-size: 3vw;
+.Symbol{
+  width: 3vw;
+  height: 3vw;
+  margin-bottom: 1vh;
 }
-
-
 
 .Heading {
   color: white;
@@ -230,7 +230,7 @@
   .Box_2_box_card{
     display: flex;
     flex-direction: column;
-    width: 25vh;
+    width: 60vw;
     height: 23vh;
     background-color: #2e2d2d;
     justify-content: center;
@@ -240,17 +240,19 @@
 
   .Box_2_box_card_text{
     color: #ffffff;
-    font-size: 0.95rem;
+    font-size: 1.25rem;
     font-family: Rubik;
     font-weight: 400;
     line-height: 1.5rem;
     text-align: center;
     text-transform: lowercase;
-    width: 20vh;
+    width: 55vw;
   }
 
-  .Symbol_Text{
-    font-size: 10.5vw;
+  .Symbol{
+    width: 9vw;
+    height: 9vw;
+    margin-bottom: 2vh;
   }
 
   .Heading {
@@ -397,13 +399,15 @@
     width: 30vw;
   }
 
-  .Symbol_Text{
-    font-size: 3rem;
+  .Symbol{
+    width: 8vw;
+    height: 8vw;
+    margin-bottom: 2vh;
   }
 
   .message_1{
     color: #ffffff;
-    font-size: 7vh;
+    font-size: 2rem;
     font-family: 'Playfair Display';
     text-align: center;
     text-transform: lowercase;
@@ -427,8 +431,8 @@
     margin-bottom: 20vh;
 }
 .Input_1{
-  width: 60vw;
-  height: 7vw;
+  width: 50vw;
+  height: 6vw;
   padding: 0px 15px;
   border: 1px solid #ffffff;
   box-sizing: border-box;
@@ -436,12 +440,12 @@
   box-shadow: 0px 0px 10px rgba(3, 3, 3, 0.1);
   background-color: #000000;
   color: #ffffff;
-  font-size: 4vw;
+  font-size: 2vw;
   font-family: 'Roboto';
 }
 .Input_2{
-  width: 60vw;
-  height: 7vw;
+  width: 50vw;
+  height: 6vw;
   padding: 0px 15px;
   border: 1px solid #ffffff;
   box-sizing: border-box;
@@ -449,14 +453,14 @@
   box-shadow: 0px 0px 10px rgba(3, 3, 3, 0.1);
   background-color: #000000;
   color: #ffffff;
-  font-size: 4vw;
+  font-size: 2vw;
   font-family: 'Roboto';
 }
 
 .submit_button{
   cursor: pointer;
-  width: 60vw;
-  height: 7vw;
+  width: 50vw;
+  height: 6vw;
   padding: 0px 8px;
   border: 1px solid hsl(62, 99%, 49%);
   box-sizing: border-box;
@@ -464,7 +468,7 @@
   box-shadow: 0px 0px 10px rgba(3, 3, 3, 0.1);
   background-color: #f8ee04;
   color: #000000;
-  font-size: 4vw;
+  font-size: 2vw;
   font-family: Poppins;
   font-weight: 600;
   line-height: 21px;
@@ -538,8 +542,10 @@
     width: 20vh;
   }
 
-  .Symbol_Text{
-    font-size: 4rem;
+  .Symbol{
+    width: 3vw;
+    height: 3vw;
+    margin-bottom: 1vh;
   }
 
   .Heading {
