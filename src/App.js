@@ -16,7 +16,8 @@ import logo from './assets/logo.jpeg';
 
 function App() {
 
-  const message_1_spaces = window.innerWidth <= 750 ? "lets make\n " : "lets make";
+  const message_1_spaces = window.innerHeight <= 750 ? "lets make " : "lets make";
+  //const message_1_spaces = window.matchMedia("(orientation: landscape)").matches ? "lets make" : "lets make\n ";
 
   return (
   <div className="Screen">
@@ -95,7 +96,6 @@ function App() {
     </div>
     </div>
     </div>
-
 
 
     <div class="Box_2_inner_3">

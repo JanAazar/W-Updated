@@ -332,10 +332,9 @@
 }
 
 @media (max-width: 768px) and (orientation: landscape) {
-  
   .Screen {
     display: flex;
-    height: 100vh;
+    height: auto;
     width: 100vw;
     background-color: black;
     flex-direction: column;
@@ -355,33 +354,32 @@
   }
 
   .Box_2{
-    /* display: flex;
+    display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: calc(100vw);
-    height: auto; */
-    display: none;
+    height: auto;
   }
 
   .Box_2_boxes{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 30vh;
-    height: 72vh;
+    width: 30wh;
+    height: 85vw;
     background-color: transparent;
-    margin-top: 2vw;
-    margin-bottom: 2vh;
+    margin-top: 1vw;
+    margin-bottom: 10vh;
     align-items: center;
-      }
+    }
 
   .Box_2_box_card{
     display: flex;
     flex-direction: column;
-    width: 25vh;
-    height: 23vh;
+    width: 35vw;
+    height: 25vw;
     background-color: #2e2d2d;
     justify-content: center;
     align-items: center;
@@ -390,40 +388,33 @@
 
   .Box_2_box_card_text{
     color: #ffffff;
-    font-size: 0.95rem;
+    font-size: 1.25rem;
     font-family: Rubik;
     font-weight: 400;
     line-height: 1.5rem;
     text-align: center;
     text-transform: lowercase;
-    width: 20vh;
+    width: 30vw;
   }
 
   .Symbol_Text{
-    font-size: 10.5vw;
-  }
-
-  .Heading {
-    color: white;
-    font-size: 2.5vw;
-    font-weight: 300;
-    font-family: playfair display;
+    font-size: 3rem;
   }
 
   .message_1{
     color: #ffffff;
-    font-size: 2rem;
+    font-size: 7vh;
     font-family: 'Playfair Display';
     text-align: center;
     text-transform: lowercase;
-    margin-bottom: 2vh;
-    width:60vw;
+    margin-bottom: 10vh;
+    width:90vw;
     
   }
 
   .logo_wrapper {
-    width: 25vw;
-    height: 25vw;
+    width: 13vw;
+    height: 13vw;
     border-radius: 1vh;
   }
 
@@ -432,12 +423,12 @@
     flex-direction: column;
     justify-content: space-between;
     width: 80vw;
-    height: 20vh;
+    height: 25vw;
     margin-bottom: 20vh;
 }
 .Input_1{
-  width: 75vw;
-  height: 10vw;
+  width: 60vw;
+  height: 7vw;
   padding: 0px 15px;
   border: 1px solid #ffffff;
   box-sizing: border-box;
@@ -449,8 +440,8 @@
   font-family: 'Roboto';
 }
 .Input_2{
-  width: 75vw;
-  height: 10vw;
+  width: 60vw;
+  height: 7vw;
   padding: 0px 15px;
   border: 1px solid #ffffff;
   box-sizing: border-box;
@@ -464,8 +455,8 @@
 
 .submit_button{
   cursor: pointer;
-  width: 75vw;
-  height: 10vw;
+  width: 60vw;
+  height: 7vw;
   padding: 0px 8px;
   border: 1px solid hsl(62, 99%, 49%);
   box-sizing: border-box;
