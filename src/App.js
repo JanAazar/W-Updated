@@ -116,7 +116,47 @@ function App() {
     </div>
     <div className='VerticalDivider' style = {{marginLeft:'6vw'}}>
     </div>
+
+  
+  <div class = 'Box_4_inner'>
+  <Marquee direction={window.innerWidth <= 786 ? "right" : "up"} speed={100} className='Marquee-Style_2'>
+    <div>
+      <img src={image_a} className='image_wrapper' alt='image_1' />
     </div>
+    <div>
+      <img src={image_b}  className='image_wrapper' alt='image_2' />
+    </div>
+    <div>
+      <img src={image_c}  className='image_wrapper' alt='image_3' />
+    </div>
+    <div>
+      <img src={image_d}  className='image_wrapper' alt='image_3' />
+    </div>
+    <div>
+      <img src={image_e}  className='image_wrapper' alt='image_3' />
+    </div>
+    <div>
+      <img src={image_f}  className='image_wrapper' alt='image_3' />
+    </div>
+    <div>
+      <img src={image_g}  className='image_wrapper' alt='image_3' />
+    </div>
+    <div>
+      <img src={image_h}  className='image_wrapper' alt='image_3' />
+    </div>
+    <div>
+      <img src={image_i}  className='image_wrapper' alt='image_3' />
+    </div>
+    <div>
+      <img src={image_k}  className='image_wrapper' alt='image_3' />
+    </div>
+  </Marquee>
+  </div>
+  </div>
+
+  
+  
+   
   );
 }
 

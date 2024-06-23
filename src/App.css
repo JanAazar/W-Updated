@@ -10,10 +10,14 @@
   /* margin-left: calc(-14.20vw); */
 }
 
+.Box_4_inner{
+  display: none;
+}
+
 .VerticalDivider {
   position: absolute;
   margin-left: 31vw; /* 20% of viewport width minus 1px (for the border) */
-  width: 2px;
+  width: 3px;
   height: 100vh;
   background-color: #c2c2c2;
   border-radius: 2px;
@@ -180,9 +184,33 @@
   outline: none;
 }
 
+
 /* add media queries here */
 
 @media (max-width: 768px){
+
+
+  .Box_4_inner{
+    display: flex;
+    width: 100vw;
+    margin-bottom: 15vh;
+    margin-top: -10vh;
+  }
+
+  .image_wrapper {
+    margin: 0px 5px;
+    height: 40vw;
+    width: 40vw;
+    border-radius: 1vw;
+    border: 3px solid white;
+  }
+
+  .Marquee-Style_2{
+    height: auto;
+    width:100vw;
+    display: flex;
+  }
+
   .Screen {
     display: flex;
     height: 100vh;
@@ -331,6 +359,7 @@
   line-height: 21px;
   outline: none;
 }
+
 }
 
 @media (max-width: 768px) and (orientation: landscape) {
@@ -474,6 +503,20 @@
   font-weight: 600;
   line-height: 21px;
   outline: none;
+}
+.Box_4_inner{
+  display: flex;
+  width: 100vw;
+  margin-bottom: 15vh;
+  margin-top: -15vh;
+}
+
+.image_wrapper {
+  margin: 0px 5px;
+  height: 20vw;
+  width: 20vw;
+  border-radius: 1vw;
+  border: 3px solid white;
 }
 }
 
@@ -625,5 +668,8 @@
     font-weight: 600;
     line-height: 21px;
     outline: none;
+  }
+  .Box_4 {
+    display: none;
   }
 }
