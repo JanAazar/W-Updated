@@ -119,7 +119,7 @@ function App() {
 
   
   <div class = 'Box_4_inner'>
-  <Marquee direction={window.innerWidth <= 786 ? "right" : "up"} speed={100} className='Marquee-Style_2'>
+  <Marquee direction={window.innerWidth <= 786 ? "right" : "up"} speed={80} className='Marquee-Style_2'>
     <div>
       <img src={image_a} className='image_wrapper' alt='image_1' />
     </div>
