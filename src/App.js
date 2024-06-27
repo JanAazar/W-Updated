@@ -14,6 +14,9 @@ import logo from './assets/logo.jpeg';
 import star from './assets/star.png';
 import ghost from './assets/ghost.png';
 import camera from './assets/camera.png';
+import feature_1 from './assets/center-1.png';
+import feature_2 from './assets/center-2.png';
+import feature_3 from './assets/center-3.png';
 
 
 
@@ -26,6 +29,9 @@ function App() {
   <div className="Screen">
 
   <div class = 'Box_0'> 
+  </div>
+  <div className='Top_Box'>
+  <button class="top_button">join the W-list</button>
   </div>
 
   <div class = 'Box_1'>
@@ -104,7 +110,7 @@ function App() {
 
 
     <div class="Box_2_inner_3">
-
+    
     <input class="Input_1" placeholder = "choose a username" />
     <input class="Input_2" placeholder= "your email address" />
     <button class="submit_button">join the W-list</button>
@@ -112,12 +118,34 @@ function App() {
 
   </div>
 
+  
+
     <div className='VerticalDivider' style = {{marginLeft:'29vw'}}>
     </div>
     <div className='VerticalDivider' style = {{marginLeft:'6vw'}}>
     </div>
 
-  
+    <div className='Box_2_image_holder'>
+    <img src={feature_1} className='Box_2_image' alt='image_1'/>
+    <img src={feature_3} className='Box_2_image' alt='image_1'/>
+    <img src={feature_2} className='Box_2_image' alt='image_1'/>
+  </div>
+
+    <div className="Box_2_inner_4">
+    <br />
+    <div class="message_1">
+    making social media social again
+    </div>
+  <div class = "Box_2_inner_4_inner">
+    
+    <input class="Input_1" placeholder = "choose a username" />
+    
+    <input class="Input_2" placeholder= "your email address" />
+    
+    <button class="submit_button">join the W-list</button>
+  </div>
+  </div>
+
   <div class = 'Box_4_inner'>
   <Marquee direction={window.innerWidth <= 786 ? "right" : "up"} speed={80} className='Marquee-Style_2'>
     <div>
@@ -152,6 +180,9 @@ function App() {
     </div>
   </Marquee>
   </div>
+
+  
+
   </div>
 
   

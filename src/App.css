@@ -191,10 +191,11 @@
 
 
   .Box_4_inner{
-    display: flex;
+    /* display: flex;
     width: 100vw;
     margin-bottom: 15vh;
-    margin-top: -10vh;
+    margin-top: -10vh; */
+    display: none;
   }
 
   .image_wrapper {
@@ -215,7 +216,7 @@
     display: flex;
     height: 100vh;
     width: 100vw;
-    background-color: black;
+    background-color: white;
     flex-direction: column;
     overflow: scroll;
   }
@@ -226,6 +227,35 @@
 
   .Box_0{
     display: none;
+  }
+
+  .Top_Box{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    width: 100vw;
+    height: 15vh;
+    margin-right:5vw;
+    background-color:white;
+  }
+
+  .top_button{
+    cursor: pointer;
+    width: 35vw;
+    height: 4vh;
+    /* padding: 0px 8px; */
+    border: 1px solid hsl(62, 99%, 49%);
+    box-sizing: border-box;
+    border-radius: 250px;
+    box-shadow: 0px 0px 10px rgba(3, 3, 3, 0.1);
+    background-color: #f8ee04;
+    color: #000000;
+    font-size: 2vw;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 21px;
+    outline: none;
+    margin-top: 1vh;
   }
 
   .Box_1{
@@ -243,7 +273,7 @@
   }
 
   .Box_2_boxes{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 30vh;
@@ -251,8 +281,22 @@
     background-color: transparent;
     margin-top: 2vw;
     margin-bottom: 2vh;
-    align-items: center;
-      }
+    align-items: center; */
+    display: none;
+}
+
+  .Box_2_image_holder{
+    display: flex;
+    flex-direction: column;
+    height:auto;
+    width: 100vw;
+    
+  }
+
+  /* .Box_2_image{
+    width: 100vw;
+    height: 100vh;
+  } */
 
   .Box_2_box_card{
     display: flex;
@@ -283,21 +327,32 @@
   }
 
   .Heading {
-    color: white;
+    color: black;
     font-size: 2.5vw;
     font-weight: 300;
     font-family: playfair display;
   }
 
   .message_1{
-    color: #ffffff;
+    color: black;
     font-size: 2rem;
     font-family: 'Playfair Display';
     text-align: center;
+    font-weight: 600;
     text-transform: lowercase;
     margin-bottom: 2vh;
     width:60vw;
-    
+  }
+  .message_2{
+    color: black;
+    font-size: 1.25rem;
+    font-family: 'Playfair Display';
+    text-align: center;
+    font-weight: 400;
+    text-transform: lowercase;
+    text-align: center;
+    margin-bottom: 2vh;
+    width:80vw;
   }
 
   .logo_wrapper {
@@ -307,14 +362,37 @@
   }
 
   .Box_2_inner_3{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 80vw;
     height: 20vh;
     margin-top: 5vh;
-    margin-bottom: 20vh;
-}
+    margin-bottom: 20vh; */
+    display: none;
+  }
+
+  .Box_2_inner_4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    background-color: pink;
+  }
+
+  .Box_2_inner_4_inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 75vw;
+    height:auto;
+    margin-bottom:5vh;
+  }
+
+
+
 .Input_1{
   width: 75vw;
   height: 10vw;
@@ -327,7 +405,9 @@
   color: #ffffff;
   font-size: 4vw;
   font-family: 'Roboto';
+  margin-bottom: 0.5vh;
 }
+
 .Input_2{
   width: 75vw;
   height: 10vw;
@@ -340,6 +420,7 @@
   color: #ffffff;
   font-size: 4vw;
   font-family: 'Roboto';
+  margin-bottom: 0.5vh;
 }
 
 .submit_button{
@@ -358,6 +439,7 @@
   font-weight: 600;
   line-height: 21px;
   outline: none;
+  margin-bottom: 10vh;
 }
 
 }
