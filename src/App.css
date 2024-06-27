@@ -4,6 +4,13 @@
   width: 100vw;
   background-color: black;
 }
+.Box_2_inner_4{
+  display:none;
+}
+
+.Top_Box{
+  display: none;
+}
 
 .Marquee-Style{
   height: 100vh;
