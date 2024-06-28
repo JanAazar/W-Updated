@@ -17,13 +17,20 @@ import camera from './assets/camera.png';
 import feature_1 from './assets/center-1.png';
 import feature_2 from './assets/center-2.png';
 import feature_3 from './assets/center-3.png';
-
+import { useRef} from 'react';
 
 
 function App() {
 
   const message_1_spaces = window.innerHeight <= 750 ? "lets make " : "lets make";
   //const message_1_spaces = window.matchMedia("(orientation: landscape)").matches ? "lets make" : "lets make\n ";
+  
+  const bottomRef = useRef(null);
+  const scrollToBottom = () => {
+    bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+  
+  
 
   return (
   <div className="Screen">
@@ -31,7 +38,7 @@ function App() {
   <div class = 'Box_0'> 
   </div>
   <div className='Top_Box'>
-  <button class="top_button">join the W-list</button>
+  <button class="top_button" onClick={scrollToBottom}>join the W-list</button>
   </div>
 
   <div class = 'Box_1'>
@@ -136,7 +143,7 @@ function App() {
     <div class="message_1">
     making social media social again
     </div>
-  <div class = "Box_2_inner_4_inner">
+  <div class = "Box_2_inner_4_inner" ref={bottomRef} >
     
     <input class="Input_1" placeholder = "choose a username" />
     
