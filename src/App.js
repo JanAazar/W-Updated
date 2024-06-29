@@ -17,12 +17,12 @@ import camera from './assets/camera.png';
 import feature_1 from './assets/center-1.png';
 import feature_2 from './assets/center-2.png';
 import feature_3 from './assets/center-3.png';
-import { useRef} from 'react';
+import {useRef} from 'react';
 
 
 function App() {
 
-  const message_1_spaces = window.innerHeight <= 750 ? "lets make " : "lets make";
+  const message_1_spaces = window.innerHeight <= 750 ? "THE GEN Z " : "THE GEN Z";
   //const message_1_spaces = window.matchMedia("(orientation: landscape)").matches ? "lets make" : "lets make\n ";
   
   const bottomRef = useRef(null);
@@ -37,9 +37,7 @@ function App() {
 
   <div class = 'Box_0'> 
   </div>
-  <div className='Top_Box'>
-  <button class="top_button" onClick={scrollToBottom}>join the W-list</button>
-  </div>
+  
 
   <div class = 'Box_1'>
   <div className='Box_1_inner'>
@@ -83,8 +81,17 @@ function App() {
     <img src={logo} className='logo_wrapper' alt='image_1'/>
 
     <div class="message_1" style={{ whiteSpace: 'pre-wrap' }}>
-    {message_1_spaces} <span style={{fontStyle:'italic'}}>✨groupchats✨</span> fun again.
+    {message_1_spaces} <span style={{fontStyle:'italic'}}><span style={{fontWeight:800}}>GROUPCHAT </span>APP</span>
     </div>
+
+  <div className='Top_Box'>
+  <button class="top_button" onClick={scrollToBottom}>join the W-list</button>
+  </div>
+
+    <div className="message_3"> 
+      swipe down for og features
+    </div>
+    
 
     <div class="Box_2_boxes">
     <div class="Box_2_box_card">
@@ -134,14 +141,14 @@ function App() {
 
     <div className='Box_2_image_holder'>
     <img src={feature_1} className='Box_2_image' alt='image_1'/>
-    <img src={feature_3} className='Box_2_image' alt='image_1'/>
     <img src={feature_2} className='Box_2_image' alt='image_1'/>
+    <img src={feature_3} className='Box_2_image' alt='image_1'/>
   </div>
 
     <div className="Box_2_inner_4">
     <br />
-    <div class="message_1">
-    making social media social again
+    <div class="message_4" style={{color:'white'}}>
+    lets make <span style={{fontStyle:'italic'}}>✨groupchats✨</span> fun again.
     </div>
   <div class = "Box_2_inner_4_inner" ref={bottomRef} >
     
